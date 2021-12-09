@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai Tap JS 3</title>
 
+    <!-- FONT awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BS5  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,80 +20,96 @@
 
 <body>
     <div class="container">
-        <button onclick="bai1()" class="btn btn-primary" id="bt1">Bài 1</button>
-        <button onclick="bai2()" class="btn btn-success" id="bt2">Bài 2</button>
-        <button onclick="bai3()" class="btn btn-danger" id="bt3">Bài 3</button>
-        <button onclick="bai4()" class="btn btn-secondary" id="bt4">Bài 4</button>
+        <div class="my-2">
+            <button onclick="bai1()" class="btn btn-primary mr-1" id="bt1">Bài 1</button>
+            <button onclick="bai2()" class="btn btn-success mr-1" id="bt2">Bài 2</button>
+            <button onclick="bai3()" class="btn btn-danger mr-1" id="bt3">Bài 3</button>
+            <button onclick="bai4()" class="btn btn-secondary mr-1" id="bt4">Bài 4</button>
+        </div>
         <div class="form__bg mt-2">
 
-            <form id="form__1" class="border border-primary">
+            <form id="form__1" class="border border-primary py-3 px-2">
                 <div class="mb-3 w-75 m-auto">
                     <div>
                         <H4 class="text-center">CHƯƠNG TRÌNH XẮP XẾP THỨ TỰ TĂNG DẦN 3 SỐ</H4>
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpNum1" placeholder="Nhập sô a">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpNum1" placeholder="Nhập sô a">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpNum2" placeholder="Nhập sô b">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpNum2" placeholder="Nhập sô b">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpNum3" placeholder="Nhập sô c">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpNum3" placeholder="Nhập sô c">
                     </div>
                     <button onclick="tangDan()" type="button" class="btn btn-primary">GO</button>
-                    <p id="txtContent1">Daay</p>
+                    <div class="form__content py-1 my-2">
+                        <span>👉</span>
+                        <span class="text-primary" id="txtContent1"></span>
+                    </div>
+
                 </div>
             </form>
 
 
-            <form class="row border border-success" id="form__2">
+            <form class="row border border-success py-3 px-2" id="form__2">
                 <div class="form-group col-12">
                     <H4 class="text-center">CHƯƠNG TRÌNH XIN CHÀO</H4>
-                    <select class="form-control form-input" id="inpFamily">
+                    <select class="form-control form-input my-3" id="inpFamily">
                         <option value="Chọn Thành Viên">Chọn Thành Viên</option>
                         <option value="1">Bố</option>
                         <option value="2">Mẹ</option>
                         <option value="3">Anh Trai</option>
                         <option value="4">Em Gái</option>
                     </select>
-                    <button onclick="chaoHoi()" type="button" id="buttonHello">Gữi Lời Chào</button>
-                    <p id="txtFamily"></p>
+                    <button onclick="chaoHoi()" type="button" id="buttonHello" class="btn btn-success">Gữi Lời
+                        Chào</button>
+                    <div class="form__content py-1 my-2">
+                        <span>👉</span>
+                        <span class="text-success" id="txtFamily"></span>
+                    </div>
                 </div>
             </form>
-            <form id="form__3" class="border border-danger">
+            <form id="form__3" class="border border-danger py-3 px-2">
                 <div class="mb-3 w-75 m-auto">
                     <div class="">
                         <H4 class="text-center">CHƯƠNG TRÌNH ĐẾM CÓ BAO NHIÊU SỐ CHẴN VÀ LẼ</H4>
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inNum1" placeholder="Nhập sô a">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inNum1" placeholder="Nhập sô a">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inNum2" placeholder="Nhập sô b">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inNum2" placeholder="Nhập sô b">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inNum3" placeholder="Nhập sô c">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inNum3" placeholder="Nhập sô c">
                     </div>
-                    <button onclick="demSo()" type="button" class="btn btn-primary">GO</button>
-                    <p id="txtDemSo">Daay</p>
+                    <button onclick="demSo()" type="button" class="btn btn-danger">GO</button>
+                    <div class="form__content py-1 my-2">
+                        <span>👉</span>
+                        <span class="text-danger" id="txtDemSo"></span>
+                    </div>
                 </div>
             </form>
-            <form id="form__4" class="border border-secondary">
+            <form id="form__4" class="border border-secondary py-3 px-2">
                 <div class="mb-3 w-75 m-auto">
                     <div class="">
                         <H4 class="text-center">CHƯƠNG TRÌNH KIỂM TRA HÌNH TAM GIÁC GÌ</H4>
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpC1" placeholder="Cạnh 1">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpC1" placeholder="Cạnh 1">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpC2" placeholder="Cạnh 2">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpC2" placeholder="Cạnh 2">
                     </div>
-                    <div class="">
-                        <input type="number" class="form-control" id="inpC3" placeholder="Cạnh 3">
+                    <div class="py-1">
+                        <input type="number" class="form-control form__input" id="inpC3" placeholder="Cạnh 3">
                     </div>
-                    <button onclick="ktTamGiac()" type="button" class="btn btn-primary">GO</button>
-                    <p id="txtTamGiac">Daay</p>
+                    <button onclick="ktTamGiac()" type="button" class="btn btn-secondary">GO</button>
+                    <div class="form__content py-1 my-2">
+                        <span>👉</span>
+                        <span class="text-secondary" id="txtTamGiac"></span>
+                    </div>
                 </div>
             </form>
         </div>

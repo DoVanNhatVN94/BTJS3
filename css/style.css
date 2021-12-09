@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .form__input {
     letter-spacing: .15px;
     border: none;
@@ -7,6 +12,7 @@
     transition: .25s ease;
     border-radius: 8px;
     box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+
 }
 .form-control {
     display: block;
@@ -24,6 +30,15 @@
     appearance: none;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form__content{
+    height: 40px;
+    width: 100%;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border-radius: 5px;
+
 }
 .form__bg{
     position: relative;
