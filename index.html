@@ -12,79 +12,87 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- main css  -->
     <link rel="stylesheet" href="./css/style.css">
-    </head>
+</head>
 
 <body>
     <div class="container">
-        <form>
-            <div class="mb-3 w-50 m-auto">
-                <div class="">
-                    <H4 class="text-center">CHƯƠNG TRÌNH XẮP XẾP THỨ TỰ TĂNG DẦN 3 SỐ</H4>
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpNum1" placeholder="Nhập sô a">
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpNum2" placeholder="Nhập sô b">
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpNum3" placeholder="Nhập sô c">
-                </div>
-                <button onclick="tangDan()" type="button" class="btn btn-primary">GO</button>
-                <p id="txtContent1">Daay</p>
-            </div>
-        </form>
+        <button onclick="bai1()" class="btn btn-primary" id="bt1">Bài 1</button>
+        <button onclick="bai2()" class="btn btn-success" id="bt2">Bài 2</button>
+        <button onclick="bai3()" class="btn btn-danger" id="bt3">Bài 3</button>
+        <button onclick="bai4()" class="btn btn-secondary" id="bt4">Bài 4</button>
+        <div class="form__bg mt-2">
 
-        <form class="row">
-            <div class="form-group col-12">
-                <H4 class="text-center">CHƯƠNG TRÌNH XIN CHÀO</H4>
-                <select class="form-control form-input" id="inpFamily">
-                    <option value="Chọn Thành Viên">Chọn Thành Viên</option>
-                    <option value="1">Bố</option>
-                    <option value="2">Mẹ</option>
-                    <option value="3">Anh Trai</option>
-                    <option value="4">Em Gái</option>
-                </select>
-                <button onclick="chaoHoi()" type="button" id="buttonHello">Gữi Lời Chào</button>
-                <p id="txtFamily"></p>
-            </div>
-        </form>
-        <form>
-            <div class="mb-3 w-50 m-auto">
-                <div class="">
-                    <H4 class="text-center">CHƯƠNG TRÌNH ĐẾM CÓ BAO NHIÊU SỐ CHẴN VÀ LẼ</H4>
+            <form id="form__1" class="border border-primary">
+                <div class="mb-3 w-75 m-auto">
+                    <div>
+                        <H4 class="text-center">CHƯƠNG TRÌNH XẮP XẾP THỨ TỰ TĂNG DẦN 3 SỐ</H4>
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpNum1" placeholder="Nhập sô a">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpNum2" placeholder="Nhập sô b">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpNum3" placeholder="Nhập sô c">
+                    </div>
+                    <button onclick="tangDan()" type="button" class="btn btn-primary">GO</button>
+                    <p id="txtContent1">Daay</p>
                 </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inNum1" placeholder="Nhập sô a">
+            </form>
+
+
+            <form class="row border border-success" id="form__2">
+                <div class="form-group col-12">
+                    <H4 class="text-center">CHƯƠNG TRÌNH XIN CHÀO</H4>
+                    <select class="form-control form-input" id="inpFamily">
+                        <option value="Chọn Thành Viên">Chọn Thành Viên</option>
+                        <option value="1">Bố</option>
+                        <option value="2">Mẹ</option>
+                        <option value="3">Anh Trai</option>
+                        <option value="4">Em Gái</option>
+                    </select>
+                    <button onclick="chaoHoi()" type="button" id="buttonHello">Gữi Lời Chào</button>
+                    <p id="txtFamily"></p>
                 </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inNum2" placeholder="Nhập sô b">
+            </form>
+            <form id="form__3" class="border border-danger">
+                <div class="mb-3 w-75 m-auto">
+                    <div class="">
+                        <H4 class="text-center">CHƯƠNG TRÌNH ĐẾM CÓ BAO NHIÊU SỐ CHẴN VÀ LẼ</H4>
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inNum1" placeholder="Nhập sô a">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inNum2" placeholder="Nhập sô b">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inNum3" placeholder="Nhập sô c">
+                    </div>
+                    <button onclick="demSo()" type="button" class="btn btn-primary">GO</button>
+                    <p id="txtDemSo">Daay</p>
                 </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inNum3" placeholder="Nhập sô c">
+            </form>
+            <form id="form__4" class="border border-secondary">
+                <div class="mb-3 w-75 m-auto">
+                    <div class="">
+                        <H4 class="text-center">CHƯƠNG TRÌNH KIỂM TRA HÌNH TAM GIÁC GÌ</H4>
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpC1" placeholder="Cạnh 1">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpC2" placeholder="Cạnh 2">
+                    </div>
+                    <div class="">
+                        <input type="number" class="form-control" id="inpC3" placeholder="Cạnh 3">
+                    </div>
+                    <button onclick="ktTamGiac()" type="button" class="btn btn-primary">GO</button>
+                    <p id="txtTamGiac">Daay</p>
                 </div>
-                <button onclick="demSo()" type="button" class="btn btn-primary">GO</button>
-                <p id="txtDemSo">Daay</p>
-            </div>
-        </form>
-        <form>
-            <div class="mb-3 w-50 m-auto">
-                <div class="">
-                    <H4 class="text-center">CHƯƠNG TRÌNH KIỂM TRA HÌNH TAM GIÁC GÌ</H4>
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpC1" placeholder="Cạnh 1">
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpC2" placeholder="Cạnh 2">
-                </div>
-                <div class="">
-                    <input type="number" class="form-control" id="inpC3" placeholder="Cạnh 3">
-                </div>
-                <button onclick="ktTamGiac()" type="button" class="btn btn-primary">GO</button>
-                <p id="txtTamGiac">Daay</p>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
 

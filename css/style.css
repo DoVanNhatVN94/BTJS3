@@ -25,3 +25,14 @@
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.form__bg{
+    position: relative;
+}
+#form__1,#form__2,#form__3,#form__4{
+    position:absolute;
+    display: none;
+    background-image: url(../img/corner-4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
